@@ -1,0 +1,34 @@
+<html> 
+<head>
+    <title>ADMISSION PREDICTION AI MODEL</title>
+<style>
+    body {
+        background-image: url("https://images.unsplash.com/20/cambridge.JPG?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&w=1000&q=80");
+    }
+</style>
+    
+</head>
+
+    <body>
+        <center><h1>ADMISSION PREDICTION APP</h1></center>
+        <form action="/admission/form" method="post"><br><br>
+            <center> GRE Score:    <input type="number" min="0" max="340" step="any" name="gre_score"></center><br>
+            <center> TOEFL Score:   <input type="number"min="0" max="120" name="t_score"></center><br>
+            <center>University Rating:<select  name="uni_rating">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option></select></center><br>
+            <center>Statement of Purpose:<input  type="number" min="1" max="5" step="any" name="sop">
+            </center><br>
+            <center>Letter of Recommendation:<input type="number" min="1" max="5" step="any" name="lor"></center><br>
+            <center>Undergraduate GPA-CGPA:<input type="number" min="5" max="10" step="any" name="cgpa"></center><br>
+            <label><center>Research Experience</label>:<select placeholder="inter research"  name="research">
+                <option value="0">0</option>
+                <option value="1">1</option></select></center><br>
+            <center><input type="submit" value="PREDICT"></center>
+        
+        </form>
+    </body>
+</html>
